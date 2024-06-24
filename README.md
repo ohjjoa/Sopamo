@@ -10,6 +10,7 @@
 * NovelWriteActivity - 부제, 다음 화 쓰기가 가능합니다.
 * MyWriteFragment - 내가 쓴 소설 탭에서 언제든 내가 쓴 소설의 리스트 확인이 가능합니다.
 * AllNovelActivity - 전체 소설 화면에서는 각 소설의 전체 목록 확인이 가능 합니다
+* UserInfoFragment - FireStoreDataBase에 저장된 유저정보를  불러옵니다. 공지사항을 통해 앱내 변경되는 업데이트 확인이 가능 합니다. 개발자에게 언제든 문의 가능한 연락처를 제공 합니다.
 ## Screenshot
 <img src="https://github.com/ohjjoa/Sopamo/assets/44994476/c8fb3c83-20ab-4171-afea-41a943648be5" width="300"/>
 <img src="https://github.com/ohjjoa/Sopamo/assets/44994476/51b47348-6e5c-41f3-8f73-a858a7d1fd45" width="300"/>
@@ -19,5 +20,5 @@
 <img src="https://github.com/ohjjoa/Sopamo/assets/44994476/9c0dfcae-6104-4be1-9513-aeb9223b2977" width="300"/>
 <img src="https://github.com/ohjjoa/Sopamo/assets/44994476/6e611d1c-d045-4394-9f03-5bc1b00ee551" width="300"/>
 <img src="https://github.com/ohjjoa/Sopamo/assets/44994476/385cf6df-51f9-4dd6-b354-2db2809e47f7" width="300"/>
-<img src="https://github.com/ohjjoa/Sopamo/assets/44994476/a4e8ad44-e055-4f4c-a341-a90f18b4247b" width="300"/>
-
+<img src="https://github.com/ohjjoa/Sopamo/assets/44994476/8213835a-fe80-4214-8909-4b8c9555b9a4" width="300"/>
+<img src="https://github.com/ohjjoa/Sopamo/assets/44994476/316dfbf2-5391-4b5a-991e-382502131656" width="300"/>
