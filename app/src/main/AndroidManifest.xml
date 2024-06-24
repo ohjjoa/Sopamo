@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <application
+        android:name=".ApplicationClass"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.NovelPartyMember"
+        tools:targetApi="31">
+        <activity
+            android:name=".view.reply.ReplyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.my_write_detail.MyWriteDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.splash.SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.NovelPartyMember.RemoveSplash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.my_page.MyPageProfileChangeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.my_page.MyPageManagementActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.book_all_content.BookAllContentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.book_all.BookAllDetailContentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.book_all.BookAllDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.my_page.MyPageSettingDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.onboarding.OnBoardingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.nextEpisode.NextEpisodeActivity"
+            android:exported="false"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name="com.google.android.gms.oss.licenses.OssLicensesMenuActivity"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name="com.google.android.gms.oss.licenses.OssLicensesActivity"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name=".view.notify.NotifyDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.notify.NotifyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.book_detail.BookDetailActivity"
+            android:exported="false"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name=".view.sign_up.SignUpActivity"
+            android:exported="false"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name=".view.login.LoginActivity"
+            android:exported="false"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.th.novelpartymember.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_round_white_10dp"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="24dp"
+        android:src="@drawable/ic_info" />
+
+    <TextView
+        android:id="@+id/text_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="12dp"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp"
+        android:text="e-mail: ohjjoa@gmail.com"/>
+
+    <TextView
+        android:id="@+id/text_kakao_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="24dp"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp"
+        android:text="kakao-id: ohjjoa"/>
+
+    <TextView
+        android:id="@+id/text_check"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/bg_round_white_black_border"
+        android:gravity="center"
+        android:lineSpacingExtra="35sp"
+        android:text="확인"
+        android:textColor="@color/colorBlack"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

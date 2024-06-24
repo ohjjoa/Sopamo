@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".view.nextEpisode.NextEpisodeActivity">
+
+    <com.th.novelpartymember.custom_view.TitleView
+        android:id="@+id/title_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:titleText="소설 쓰기" />
+
+    <TextView
+        android:id="@+id/text_write_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_view"
+        tools:text="육국지 2화"/>
+
+    <View
+        android:id="@+id/view_divide1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/colorLightGray"
+        app:layout_constraintTop_toBottomOf="@id/text_write_info"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edit_sub_title"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:padding="8dp"
+        android:hint="타이틀을 입력해 주세요"
+        android:background="@null"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/view_divide1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/view_divide2"/>
+
+    <View
+        android:id="@+id/view_divide2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/colorLightGray"
+        app:layout_constraintTop_toBottomOf="@id/edit_sub_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edit_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="8dp"
+        android:hint="소설 내용을 입력해주세요."
+        android:background="@null"
+        android:layout_margin="24dp"
+        android:gravity="top"
+        app:layout_constraintBottom_toTopOf="@+id/layout_bottom"
+        app:layout_constraintTop_toBottomOf="@+id/view_divide2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_bottom"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/colorLightGray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <View
+            android:id="@+id/view_divide3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="24dp"
+            android:background="@color/colorLightGray"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_delete_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/image_delete_title"
+                android:layout_width="95dp"
+                android:layout_height="37dp"
+                android:src="@drawable/bg_round_ffffff_8dp"
+                android:layout_marginTop="4dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:id="@+id/text_delete_title"
+                android:layout_width="95dp"
+                android:layout_height="37dp"
+                android:text="타이틀 지우기"
+                android:gravity="center"
+                app:layout_constraintTop_toTopOf="@id/image_delete_title"
+                app:layout_constraintBottom_toBottomOf="@+id/image_delete_title"
+                app:layout_constraintStart_toStartOf="@+id/image_delete_title"
+                app:layout_constraintEnd_toEndOf="@+id/image_delete_title"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_delete_novel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/layout_delete_title"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/image_delete_novel"
+                android:layout_width="95dp"
+                android:layout_height="37dp"
+                android:src="@drawable/bg_round_ffffff_8dp"
+                android:layout_marginTop="4dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:id="@+id/text_delete_novel"
+                android:layout_width="95dp"
+                android:layout_height="37dp"
+                android:text="소설 지우기"
+                android:gravity="center"
+                app:layout_constraintTop_toTopOf="@id/image_delete_novel"
+                app:layout_constraintBottom_toBottomOf="@+id/image_delete_novel"
+                app:layout_constraintStart_toStartOf="@+id/image_delete_novel"
+                app:layout_constraintEnd_toEndOf="@+id/image_delete_novel"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_copy_novel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/layout_delete_novel"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/image_copy_novel"
+                android:layout_width="95dp"
+                android:layout_height="37dp"
+                android:src="@drawable/bg_round_ffffff_8dp"
+                android:layout_marginTop="4dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:id="@+id/text_copy_novel"
+                android:layout_width="95dp"
+                android:layout_height="37dp"
+                android:text="소설 복사하기"
+                android:gravity="center"
+                app:layout_constraintTop_toTopOf="@id/image_copy_novel"
+                app:layout_constraintBottom_toBottomOf="@+id/image_copy_novel"
+                app:layout_constraintStart_toStartOf="@+id/image_copy_novel"
+                app:layout_constraintEnd_toEndOf="@+id/image_copy_novel"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

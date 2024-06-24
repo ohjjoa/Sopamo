@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_book_contents"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_book_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/image_book"
+                android:layout_width="60dp"
+                android:layout_height="80dp"
+                android:src="@drawable/img_test_book"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/text_book_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            tools:text="육국지 1화"
+            android:textColor="@color/colorBlack"
+            android:layout_marginStart="16dp"
+            android:textSize="13sp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/layout_book_image"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_writer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorLightGray"
+            android:layout_marginTop="8dp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            tools:text="소파모"
+            app:layout_constraintBottom_toTopOf="@+id/text_in_progress"
+            app:layout_constraintEnd_toStartOf="@+id/text_registered_date"
+            app:layout_constraintStart_toStartOf="@+id/text_book_title"
+            app:layout_constraintTop_toBottomOf="@+id/text_book_title" />
+
+        <TextView
+            android:id="@+id/text_registered_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            tools:text="등록일:24.01.01"
+            android:textColor="@color/colorBlack"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/text_writer"
+            app:layout_constraintStart_toEndOf="@+id/text_writer"/>
+
+        <TextView
+            android:id="@+id/text_in_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="2화 진행중"
+            android:textColor="@color/colorBlack"
+            app:layout_constraintStart_toStartOf="@+id/text_writer"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

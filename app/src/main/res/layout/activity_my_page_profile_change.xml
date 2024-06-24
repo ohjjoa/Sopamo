@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".view.my_page.MyPageProfileChangeActivity">
+
+    <com.th.novelpartymember.custom_view.TitleView
+        android:id="@+id/title_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:titleText="파티원 닉네임 변경"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/text_change_nick_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="24dp"
+        android:textStyle="bold"
+        android:text="더 멋지고 화려한 닉네임을 입력해주세요."
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/title_view"
+        app:layout_constraintStart_toStartOf="@+id/title_view"/>
+
+    <EditText
+        android:id="@+id/edit_change_nick_name"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:background="@drawable/bg_round_user_info"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="20dp"
+        android:hint="어둠보다더어두운자여"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/text_change_nick_name"
+        app:layout_constraintTop_toBottomOf="@+id/text_change_nick_name"/>
+
+    <View
+        android:id="@+id/view_divide"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="24dp"
+        android:background="@color/colorLightGray"
+        app:layout_constraintBottom_toTopOf="@+id/button_confirm"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/btn_black_4dp"
+        android:text="변경완료"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

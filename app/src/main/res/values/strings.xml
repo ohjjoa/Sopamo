@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">novelPartyMember</string>
+
+    <string name="welcome_message">님 오신 걸 환영합니다.</string>
+
+    <!-- contentDescription -->
+    <string name="content_back_press">뒤로가기기능</string>
+    <string name="content_close">화면끄기</string>
+
+    <!-- main -->
+    <string name="main_bottom_item_first">홈</string>
+    <string name="main_bottom_item_second">내가 쓴 소설</string>
+    <string name="main_bottom_item_third">파티원 정보</string>
+
+
+    <!-- home -->
+    <string name="home_all_book_list">전체 소설 리스트</string>
+
+
+    <!-- my page -->
+    <string name="my_page_user_info">내 정보</string>
+
+    <!-- next episode -->
+    <string name="next_episode_update">다음화 뽑내기</string>
+    <string name="next_episode_clear">전부 지우기</string>
+
+</resources>

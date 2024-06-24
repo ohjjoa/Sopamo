@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_home"
+        android:title="@string/main_bottom_item_first"
+        android:icon="@drawable/ic_sopamo_not_select" />
+
+    <item
+        android:id="@+id/action_my_write"
+        android:title="@string/main_bottom_item_second"
+        android:icon="@drawable/ic_my_write_not_select" />
+
+    <item
+        android:id="@+id/action_my_page"
+        android:title="@string/main_bottom_item_third"
+        android:icon="@drawable/ic_user_not_select" />
+</menu>
