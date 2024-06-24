@@ -3,9 +3,9 @@
 ## Feature
 * SplashActivity - 유저 확인 후 이미 가입된 유저라면 MainActivity 이동, 미가입 유저라면 OnBoardingActivity로 이동합니다.
 * OnBoardingActivity - 앱의 사용 설면 화면으로 회원가입 / 로그인 화면으로 이동 합니다.
-* 3페이지에는 뉴스의 출처가 나옵니다.
-* 자세한 기사는 URL로 웹뷰로 보입니다.
-* News API를 이용하고 있습니다.
+* SignUpActivity - FireBaseAuth를 통해 회원가입을 진행 합니다.
+* LoginActivity - FireBaseAuth를 통해 로그인을 진행 합니다.
+* MainActivity - FireStoreDataBase에 저장된 유저 닉네임 확인이 가능 합니다. 유저들의 올린 소설 중 채택된 최신소설 확인이 가능 합니다. 전체 소설 확인이 가능합니다.
 ## Screenshot
 <img src="https://github.com/ohjjoa/Sopamo/assets/44994476/c8fb3c83-20ab-4171-afea-41a943648be5" width="300"/>
 <img src="https://github.com/ohjjoa/Sopamo/assets/44994476/51b47348-6e5c-41f3-8f73-a858a7d1fd45" width="300"/>
