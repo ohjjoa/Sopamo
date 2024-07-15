@@ -11,6 +11,7 @@ import com.th.novelpartymember.MainActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.th.novelpartymember.databinding.ActivitySplashBinding
 import com.th.novelpartymember.view.onboarding.OnBoardingActivity
+import com.th.novelpartymember.view.onboarding.OnBoardingView
 
 @SuppressLint("CustomSplashScreen")
 class SplashActivity : AppCompatActivity() {
@@ -42,7 +43,7 @@ class SplashActivity : AppCompatActivity() {
             finish()
             return
         }
-        startActivity(Intent(this, OnBoardingActivity::class.java))
+        startActivity(Intent(this, OnBoardingView::class.java))
         finish()
     }
 }

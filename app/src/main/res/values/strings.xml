@@ -23,5 +23,7 @@
     <!-- next episode -->
     <string name="next_episode_update">다음화 뽑내기</string>
     <string name="next_episode_clear">전부 지우기</string>
+    <string name="title_activity_on_boarding_view">OnBoardingView</string>
+    <string name="title_activity_splash_view">SplashView</string>
 
 </resources>

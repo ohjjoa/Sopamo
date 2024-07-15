@@ -25,6 +25,16 @@
         android:theme="@style/Theme.NovelPartyMember"
         tools:targetApi="31">
         <activity
+            android:name=".view.splash.SplashView"
+            android:exported="false"
+            android:label="@string/title_activity_splash_view"
+            android:theme="@style/Theme.NovelPartyMember" />
+        <activity
+            android:name=".view.onboarding.OnBoardingView"
+            android:exported="false"
+            android:label="@string/title_activity_on_boarding_view"
+            android:theme="@style/Theme.NovelPartyMember" />
+        <activity
             android:name=".view.reply.ReplyActivity"
             android:exported="false" />
         <activity
